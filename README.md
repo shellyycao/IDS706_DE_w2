@@ -21,11 +21,11 @@ The E-commerce Consumer Behavior Analysis dataset is a structured collection of 
 ## What are some findings(so far)?
 
 1. Customers are spread fairly across age groups, with the largest concentration in the 25–30 range; male and female customers make up the majority, while other gender identities are represented in much smaller proportions.
-![Age Distribution by Gender](plots/Age_gender.png)
+![Age Distribution by Gender](Age_gender.png)
 
 2. Electronics and Furniture are the most popular categories,customers across all age groups show interest in similar categories. Male customers purchase the most in Health Supplements, while female customers purchase the most in Jewelry & Accessories
-![Top 10 Product Categories by Age Group](plots/Cat_Age.png)
-![Top 10 Product Categories by Gender](plots/Cat_Gender.png)
+![Top 10 Product Categories by Age Group](Cat_Age.png)
+![Top 10 Product Categories by Gender](Cat_Gender.png)
 
 3. Income Level was surprisingly not a significant predictor of spending!
 
