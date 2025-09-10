@@ -9,6 +9,13 @@ https://www.kaggle.com/datasets/salahuddinahmedshuvo/ecommerce-consumer-behavior
 
 The E-commerce Consumer Behavior Analysis dataset is a structured collection of demographic and behavioral information about online shoppers. It includes customer details such as age, gender, and income level, along with purchasing factors like product category, purchase amount, frequency, brand loyalty, and satisfaction.
 
+Key Features (from the website):
+- Customer Demographics: Understand age, income, gender, and education level for better segmentation and targeted marketing.
+- Purchase Behavior: Includes purchase amount, frequency, category, and channel preferences to assess spending patterns.
+- Customer Loyalty: Features like brand loyalty, engagement with ads, and loyalty program membership provide insights into long-term customer retention.
+- Product Feedback: Customer ratings and satisfaction levels allow for analysis of product quality and customer sentiment.
+- Decision-Making: Time spent on product research, time to decision, and purchase intent reflect how customers make purchasing decisions.
+- Influences on Purchase: Factors such as social media influence, discount sensitivity, and return rates are included to analyze how external factors affect purchasing behavior.
 ## What did I do?
 
 1. I imported the e-commerce dataset, cleaned it by dropping missing values and duplicates, and saved a cleaned copy for analysis(just in case).
