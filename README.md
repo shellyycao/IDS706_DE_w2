@@ -16,6 +16,7 @@ Key Features (from the website):
 - Product Feedback: Customer ratings and satisfaction levels allow for analysis of product quality and customer sentiment.
 - Decision-Making: Time spent on product research, time to decision, and purchase intent reflect how customers make purchasing decisions.
 - Influences on Purchase: Factors such as social media influence, discount sensitivity, and return rates are included to analyze how external factors affect purchasing behavior.
+
 ## What did I do?
 
 1. I imported the e-commerce dataset, cleaned it by dropping missing values and duplicates, and saved a cleaned copy for analysis(just in case).
