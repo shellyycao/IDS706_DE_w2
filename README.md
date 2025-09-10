@@ -3,7 +3,7 @@
 The data is download from Kaggle, link here: 
 https://www.kaggle.com/datasets/salahuddinahmedshuvo/ecommerce-consumer-behavior-analysis-data
 
-**AI usage disclaimer: The python code is created with the help of Copilot and ChatGPT**
+**AI usage disclaimer: The python code is created with the help of Copilot and ChatGPT, especially the ML part**
 
 ## What is this data?
 
