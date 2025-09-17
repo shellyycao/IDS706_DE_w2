@@ -65,9 +65,7 @@ print(gender_counts)
 # Plot age distribution with gender differentiation
 age_bins = [0, 20, 25, 30, 35, 40, 45, df["Age"].max() + 1]
 age_labels = ["<20", "20-25", "25-30", "30-35", "35-40", "40-45", ">45"]
-age_groups = pd.cut(
-    df["Age"], bins=age_bins, labels=age_labels, right=False
-)
+age_groups = pd.cut(df["Age"], bins=age_bins, labels=age_labels, right=False)
 
 df = df.copy()
 df["Age_Group"] = age_groups  # Create a new column for age groups
@@ -101,9 +99,7 @@ category_age_group = category_age_group.loc[
 ]
 
 # Plot stacked bar chart for top 10 product categories by age group
-ax = category_age_group.plot(
-    kind="barh", stacked=True, colormap="tab10"
-)
+ax = category_age_group.plot(kind="barh", stacked=True, colormap="tab10")
 ax.set_title("Top 10 Product Categories by Age Group")
 ax.set_xlabel("Count")
 ax.set_ylabel("Product Category")
@@ -119,8 +115,7 @@ cat_gender = (
 )
 
 cat_gender = cat_gender.loc[
-    cat_gender.sum(axis=1).sort_values(ascending=True).index
-]
+    cat_gender.sum(axis=1).sort_values(ascending=True).index]
 
 ax = cat_gender.plot(kind="barh", stacked=True, figsize=(8, 6))
 ax.set_title("Top 10 Product Categories by Gender (Counts)")
@@ -131,16 +126,14 @@ plt.show()
 
 # 3. Average purchase amount by age group
 # Ensure 'Purchase_Amount' is numeric
-df["Purchase_Amount_Numeric"] = df["Purchase_Amount"].replace(
-    r"[\$,]", "", regex=True
-)
+df["Purchase_Amount_Numeric"] = df[
+    "Purchase_Amount"].replace(r"[\$,]", "", regex=True)
 df["Purchase_Amount_Numeric"] = pd.to_numeric(
     df["Purchase_Amount_Numeric"], errors="coerce"
 )
 
 avg_purchase_by_age_group = df.groupby("Age_Group")[
-    "Purchase_Amount_Numeric"
-].mean()
+    "Purchase_Amount_Numeric"].mean()
 print(avg_purchase_by_age_group)
 
 # 4. Relationship between Age Group and Amount Spent
@@ -154,9 +147,7 @@ plt.title("Average Amount Spent by Age (Dot Chart)")
 plt.xlabel("Age")
 plt.ylabel("Average Purchase Amount")
 plt.grid(True, linestyle="--", alpha=0.5)
-plt.plot(
-    age_purchase.index, p(age_purchase.index), "r--", label="Trend Line"
-)
+plt.plot(age_purchase.index, p(age_purchase.index), "r--", label="Trend Line")
 plt.tight_layout()
 plt.show()
 
@@ -178,8 +169,7 @@ print(model.summary())
 # I wonder if gender has a significant effect on the amount spent
 # by customers.
 anova_model1 = smf.ols(
-    "Purchase_Amount_Numeric ~ C(Gender)", data=df
-).fit()
+    "Purchase_Amount_Numeric ~ C(Gender)", data=df).fit()
 anova_table1 = sm.stats.anova_lm(anova_model1)
 print(anova_table1)
 # In general, it seems gender does not have a significant effect
@@ -192,8 +182,7 @@ print("Male mean:", male.mean(), "SD:", male.std())
 print("Female mean:", female.mean(), "SD:", female.std())
 # Conduct t-test:
 t_stat, p_value = stats.ttest_ind(
-    male, female, equal_var=False
-)  # Welch's t-test
+    male, female, equal_var=False)  # Welch's t-test
 print("t-statistic:", t_stat)
 print("p-value:", p_value)
 # Here, we see a statistically significant difference (if set P at 0.1),
@@ -203,8 +192,7 @@ print("p-value:", p_value)
 # I wonder if income level has a significant effect on the amount
 # spent by customers.
 anova_model2 = smf.ols(
-    "Purchase_Amount_Numeric ~ C(Income_Level)", data=df
-).fit()
+    "Purchase_Amount_Numeric ~ C(Income_Level)", data=df).fit()
 anova_table2 = sm.stats.anova_lm(anova_model2)
 print(anova_table2)
 # Surprisingly, income level does not have a significant effect
