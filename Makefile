@@ -9,7 +9,7 @@ lint:
 	flake8 mini_project_1.py
 
 test:
-	python -m pytest -vv --cov=hello test_mini_project_1.py
+	python -m pytest -s -vv test_mini_project_1.py
 
 clean:
 	rm -rf __pycache__ .pytest_cache .coverage

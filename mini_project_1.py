@@ -251,3 +251,7 @@ print("RMSE:", rmse)
 # Unfortunately, the model does not perform well, which indicates
 # that these features alone are not sufficient to predict purchase
 # amount accurately.
+
+
+# Save processed data to a new CSV file
+df.to_csv("Processed_Data.csv", index=False)
