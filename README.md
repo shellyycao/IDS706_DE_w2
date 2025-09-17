@@ -41,7 +41,7 @@ docker run --rm -it shellyycao/shellyproject1:latest
 
 ### Cool! After run the test, you should be able to see...
 
-
+![Test Pass](test.png)
 
 In this test python file, I checked...
 
