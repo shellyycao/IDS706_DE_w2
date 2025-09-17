@@ -1,3 +1,97 @@
+# Install Instruction
+**Updated for part 2**
+
+In this file, you can find two ways to set up your environment, pick one that works for you!
+
+First of all, you need to clone it from **GitHub** by running:
+```bash
+git clone https://github.com/shellyycao/IDS706_DE_w2.git
+```
+
+1. You can use the dev container by...
+a. Run  
+```bash
+make install
+```
+b. Run code in mini_project.py  
+c. Run test
+```bash
+make test
+```
+
+2. Or, you can try to use my Dockerfile!
+**You must make sure you have Docker on your computer**
+a. in the path of your folder (where you store the whole thing), run:  
+```bash
+docker build -t shellyproject1 .
+```
+b. Then you can run the whole thing!  
+```bash
+docker run --rm -it shellyproject1
+```
+c. You can run the test too:  
+```bash
+docker run --rm -it shellyproject1 pytest -s -vv
+```
+d. (Optional) If that is still too complicated, I also published my docker, so you can just...  
+```bash
+docker pull shellyycao/shellyproject1:latest
+docker run --rm -it shellyycao/shellyproject1:latest
+```
+
+### Cool! After run the test, you should be able to see...
+
+![Test results](test_pass.png)
+
+In this test python file, I checked...
+
+- File Upload: Verified the raw CSV loads, is not empty, and includes required columns (Age, Gender, Purchase_Category, Purchase_Amount, Income_Level).
+- Data cleaning: Confirmed the cleaned dataset has no missing values and no duplicate rows, and that Purchase_Amount_Numeric is correctly converted to a numeric type.
+- Data analysis sanity checks: Checked that Age statistics (mean, median, mode) fall within a reasonable range (0–100), and age_group is correctly formed. 
+
+————————————————————————————
+
+## What I did to set up all the dev container/docker file?
+
+### for dev container:
+1. You need to "Command + P" and search for: >Add Dev Container...
+2. Add configuration to workspace
+3. Select a template that you like!
+4. Enable the requirement.txt line in you .json file (don't know what that is? Well it could be made while you first set up the repo, hint:).  
+```bash
+touch Makefile
+touch name.py
+touch test_name.py
+touch requirements.txt
+```
+5. (Assume you figured your makefile already..), Run:
+```bash
+make install
+```
+### for docker
+1. You need to get a new dockerfile running! How?  
+- File -> New File... -> type "Dockerfile" (plz don't alter this!)
+2. After you have your dockerfile ready, you need to build it:  
+```bash
+docker build -t < replace with a fun name > .
+```
+3. Then run it 
+```bash
+docker run --rm -it < THE fun name >
+```
+4. Yeah! You got that!
+5. (Optional) If you want to publish your docker so everyone can pull it, you can run:  
+```bash
+docker login
+docker tag <The fun name><your name in docker>/the fun name
+docker push <your name in docker>/<fun name>
+```
+**Note:** Once you have your docker file ready, when select template for your dev container, you can select dockerfile as your template!
+
+
+
+————————————————————————————
+
 # IDS706_DE_w2
 
 The data is download from Kaggle, link here: 
