@@ -1,9 +1,3 @@
-pandas
-numpy
-matplotlib
-scipy
-statsmodels
-scikit-learn
 pylint
 flake8
 pytest
