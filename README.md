@@ -1,5 +1,8 @@
+[![IDS706 mini project 1](https://github.com/shellyycao/IDS706_DE_w2/actions/workflows/main.yml/badge.svg)](https://github.com/shellyycao/IDS706_DE_w2/actions/workflows/main.yml)
+
 # Update (refactor) for part 3 log
 
+- yml file is added, badge is added
 - Change the filename from df to Eco_Con_Beh, which stand for Ecommerce_Consumer_Behavior
 - Enabled copy_on_write
 - Update the output to better show case the result:  
