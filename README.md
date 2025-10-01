@@ -1,26 +1,39 @@
+# Update (refactor) for part 3 log
+
+- Change the filename from df to Eco_Con_Beh, which stand for Ecommerce_Consumer_Behavior
+- Enabled copy_on_write
+- Update the output to better show case the result:  
+
+![Top 10 Product Categories by Gender_Update](cat_update.png)
+![Top 10 Product Categories by Age Group_Update](output_update.png)
+
+- Delete all the duplicated variables
+- Refine format with Black and Lint
+
+
 # Install Instruction
 **Updated for part 2**
 
-In this file, you can find two ways to set up your environment, pick one that works for you!
+In this file, you can find two ways to set up your environment, pick one that works for you!  
 
-First of all, you need to clone it from **GitHub** by running:
+First of all, you need to clone it from **GitHub** by running:  
 ```bash
 git clone https://github.com/shellyycao/IDS706_DE_w2.git
 ```
 
-1. You can use the dev container by...
+1. You can use the dev container by...  
 a. Run  
 ```bash
 make install
 ```
 b. Run code in mini_project.py  
-c. Run test
+c. Run test  
 ```bash
 make test
 ```
 
-2. Or, you can try to use my Dockerfile!
-**You must make sure you have Docker on your computer**
+2. Or, you can try to use my Dockerfile!  
+**You must make sure you have Docker on your computer**  
 a. in the path of your folder (where you store the whole thing), run:  
 ```bash
 docker build -t shellyproject1 .
@@ -43,7 +56,7 @@ docker run --rm -it shellyycao/shellyproject1:latest
 
 ![Test Pass](test.png)
 
-In this test python file, I checked...
+In this test python file, I checked...  
 
 - File Upload: Verified the raw CSV loads, is not empty, and includes required columns (Age, Gender, Purchase_Category, Purchase_Amount, Income_Level).
 - Data cleaning: Confirmed the cleaned dataset has no missing values and no duplicate rows, and that Purchase_Amount_Numeric is correctly converted to a numeric type.
@@ -111,7 +124,7 @@ Key Features (from the website):
 - Decision-Making: Time spent on product research, time to decision, and purchase intent reflect how customers make purchasing decisions.
 - Influences on Purchase: Factors such as social media influence, discount sensitivity, and return rates are included to analyze how external factors affect purchasing behavior.
 
-## What did I do?
+## What did I do?  
 
 1. I imported the e-commerce dataset, cleaned it by dropping missing values and duplicates, and saved a cleaned copy for analysis(just in case).
 2. I took a look at the demographics and behavior (age/gender distributions, top product categories, and spending by age group), and visualized trends with bar charts and dot plots.
