@@ -2,6 +2,7 @@
 
 # Update (refactor) for part 3 log
 
+- Yml file added, badge added
 - Change the filename from df to Eco_Con_Beh, which stand for Ecommerce_Consumer_Behavior
 - Enabled copy_on_write
 - Update the output to better show case the result:  
@@ -11,6 +12,8 @@
 
 - Delete all the duplicated variables
 - Refine format with Black and Lint
+
+* AI usage disclaimer: The idea of this whole project (including the questions asked and answered) is my own work as well as this README file and any comment made in the py file, ChatGPT was used on refining my plot and provide code from ML part that I don't have much knowledge about. 
 
 
 # Install Instruction
