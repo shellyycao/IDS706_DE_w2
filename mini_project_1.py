@@ -29,12 +29,9 @@ print(Eco_Con_Beh.dtypes)
 print(Eco_Con_Beh.info())
 print(Eco_Con_Beh.describe())
 
-# Check for missing values
-print(Eco_Con_Beh.isnull().sum())
+
 # Drop missing values
 Eco_Con_Beh = Eco_Con_Beh.dropna()
-# Check if still have missing values
-print(Eco_Con_Beh.isnull().sum())
 
 # Drop duplicates
 Eco_Con_Beh = Eco_Con_Beh.drop_duplicates()

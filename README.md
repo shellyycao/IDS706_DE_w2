@@ -5,6 +5,7 @@
 - Yml file added, badge added
 - Change the filename from df to Eco_Con_Beh, which stand for Ecommerce_Consumer_Behavior
 - Enabled copy_on_write
+- Delete all the test in the py file since all the cases is tested in the test file, for example, check duplicate and check missing value code was dropped, since those will be tested in the test section
 - Update the output to better show case the result:  
 
 ![Top 10 Product Categories by Gender_Update](cat_update.png)
@@ -13,7 +14,7 @@
 - Delete all the duplicated variables
 - Refine format with Black and Lint
 
-* AI usage disclaimer: The idea of this whole project (including the questions asked and answered) is my own work as well as this README file and any comment made in the py file, ChatGPT was used on refining my plot and provide code from ML part that I don't have much knowledge about. 
+* AI usage disclaimer: The idea of this whole project (including the questions asked and answered) is my own work as well as this README file and any comment made in the py file, ChatGPT was used with care on refining my plot and provide code from ML part that I don't have much knowledge about. 
 
 
 # Install Instruction
