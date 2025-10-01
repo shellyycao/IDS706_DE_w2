@@ -2,7 +2,6 @@
 
 # Update (refactor) for part 3 log
 
-- yml file is added, badge is added
 - Change the filename from df to Eco_Con_Beh, which stand for Ecommerce_Consumer_Behavior
 - Enabled copy_on_write
 - Update the output to better show case the result:  
