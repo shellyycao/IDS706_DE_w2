@@ -2,17 +2,23 @@
 
 # Update (refactor) for part 3 log
 
-- Yml file added, badge added
+- Yml file added, badge added:
+![CI workflow](workflow.png)
 - Change the filename from df to Eco_Con_Beh, which stand for Ecommerce_Consumer_Behavior
 - Enabled copy_on_write
 - Delete all the test in the py file since all the cases is tested in the test file, for example, check duplicate and check missing value code was dropped, since those will be tested in the test section
+- Delete all the duplicated variables
+![Update1](update1.png)
+![Update2](update2.png)
+
 - Update the output to better show case the result:  
 
 ![Top 10 Product Categories by Gender_Update](cat_update.png)
 ![Top 10 Product Categories by Age Group_Update](output_update.png)
 
-- Delete all the duplicated variables
+
 - Refine format with Black and Lint
+
 
 * AI usage disclaimer: The idea of this whole project (including the questions asked and answered) is my own work as well as this README file and any comment made in the py file, ChatGPT was used with care on refining my plot and provide code from ML part that I don't have much knowledge about. 
 
